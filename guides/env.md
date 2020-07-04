@@ -2,7 +2,7 @@
 
 The hardware layout looks like this.
 
-[!layout](/pics/layout.png)
+![layout](/pics/layout.png)
 
 For the virtual machines I use [VMware Workstation 15](https://www.vmware.com/products/workstation-pro.html), for the *route* I use [GNS3](https://gns3.com/software/download-vm).
 
