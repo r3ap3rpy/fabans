@@ -24,6 +24,18 @@ A new command will become available which is called *fab* that allows you to exe
 Login to the management machine, install the epel-repository with the *sudo yum install epel-release -y*.
 Then install ansible with the *sudo yum install ansible -y*.
 
+# Later
+
+The ansible setup requires to you to create the */etc/ansible/group_vars* folder.
+Then create the */etc/ansible/group_vars/all.yml* file.
+In that file you need to add the following lines.
+
+``` yaml
+ansible_user: fabric
+```
+
+Then edit the */etc/ansible/ansible.cfg* file to enable auto host key adding and configure the private key that is to be used when running ansible commands.
+
 ## Pubkey auth.
 
 Create the fabric user on each of the systems.

@@ -11,6 +11,11 @@ Most of the videos come with markdown based guides aswell.
 Guides:
 
 * [Environment](/guides/env.md)
-
+* [Hello World](/guides/hello.md)
+* [sudo](/guides/sudo.md)
+* [functions](/guides/functions.md)
+* [groups](/guides/groups.md)
+* [filemove](/guides/filemove.md)
+* [fabfile](/guides/fabfile.md)
 
 ![overview](/pics/overview.png)
