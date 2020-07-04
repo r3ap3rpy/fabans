@@ -17,5 +17,6 @@ Guides:
 * [groups](/guides/groups.md)
 * [filemove](/guides/filemove.md)
 * [fabfile](/guides/fabfile.md)
+* [proxy](/guides/proxy.md)
 
 ![overview](/pics/overview.png)
