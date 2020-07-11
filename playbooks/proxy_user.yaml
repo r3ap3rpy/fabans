@@ -1,0 +1,9 @@
+---
+- hosts: "{{FQDN}}"
+  gather_facts: no
+  tasks:
+  - name: "Provision user: {{user}} with password: {{password}}"
+    win_user:
+      name: "{{user}}"
+      password: "{{password}}"
+      state: present

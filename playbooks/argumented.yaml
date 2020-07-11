@@ -1,0 +1,13 @@
+---
+- hosts: "{{FQDN}}"
+  vars:
+    - a: "{{a}}"
+    - b: "{{b}}"
+  gather_facts: no
+  tasks:
+  - name: "Executing task on FQDN: {{FQDN}} !"
+    debug:
+      msg: "The value of a = {{a}}"
+  - name: "Executing task on FQDN: {{FQDN}} !"
+    debug:
+      msg: "The value of b = {{b}}"

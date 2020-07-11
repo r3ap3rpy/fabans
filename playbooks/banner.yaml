@@ -1,0 +1,15 @@
+---
+- hosts: "{{device}}"
+  gather_facts: no
+  tasks:
+  - name: "Configure login banner!"
+    ios_banner:
+      banner: login
+      text: | 
+        Welcome to the X companys network device!
+        Unathorized  access is prohibited! 
+  - name: "Configure motd banner!"
+    ios_banner:
+      banner: motd
+      text: |
+        This is the message of the day!

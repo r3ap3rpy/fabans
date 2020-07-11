@@ -1,0 +1,14 @@
+---
+- hosts: "{{device}}"
+  gather_facts: no
+  tasks:
+  - name: "Whats wrong with {{device}} ???"
+    ios_command:
+      commands:
+        - show ip int brief
+        - show version
+        - ping 192.168.56.1
+    register: output
+  - name: "The results!"
+    debug:
+      msg: "{{output.stdout_lines}}"

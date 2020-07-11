@@ -1,0 +1,22 @@
+---
+- hosts: centos
+  tasks:
+  - name: "Get setup info"
+    setup:
+  - name: "Files to be created"
+    file:
+      path: "{{item}}"
+      state: touch
+    with_items:
+    - /home/fabric/file1.txt
+    - /home/fabric/file2.txt
+    - /home/fabric/file3.txt
+  - name: "Copy files to tmp"
+    copy:
+      src: "{{item}}"
+      dest: /tmp/
+      remote_src: yes
+    with_items:
+    - /home/fabric/file1.txt
+    - /home/fabric/file2.txt
+    - /home/fabric/file3.txt
