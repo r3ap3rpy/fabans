@@ -50,3 +50,13 @@ Host *
 	User fabric
 	IdentityFile C:\Users\<username>\.ssh\id_rsa
 ```
+
+## IOS Auth
+
+In order to be able to configure the network devices you need to add 3 more lines to the  */etc/ansible/group_vars/ios.yaml*.
+
+``` yaml
+ansible_become: yes
+ansible_become_method: enable
+ansible_become_password: fabric
+```

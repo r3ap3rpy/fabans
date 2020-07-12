@@ -1,5 +1,20 @@
 ### Functions
 
-What happens when you have a task to execute the same commands on different hosts?
+Fabric allows you to group series of commands together and call upon them when needed.
+The corresponding video of the course helps you with that.
 
-This script *functions.py* gives you the answer for that
+Here is a boiler plate template.
+
+``` python
+from fabric import Connection
+
+management = Connection('server')
+
+def myfunction(c):
+    c.run('mycommand')
+    c.get('mmyfile')
+
+myfunction(management)
+```
+
+This script *functions.py* should be checked out for reference.

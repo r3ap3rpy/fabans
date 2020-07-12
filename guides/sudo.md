@@ -1,6 +1,6 @@
 ### Sudo privileges
 
-This guide covers 3 scripts.
+This guide covers 3 scripts. There are multiple ways to handle sudo prompts.
 
 - sudo_1.py
 - sudo_2.py
