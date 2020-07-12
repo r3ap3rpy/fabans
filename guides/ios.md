@@ -6,4 +6,4 @@ Then we take a look at some usecases when you need to configure the *login banne
 You should check out the *fabfile_ios.py* with the *banner.yaml* for reference.
 Aswell the the *fabfile.py* with the *tshoot.yaml*.
 
-![overview](/pics/Windows.png)
+![overview](/pics/Ios.png)
