@@ -18,5 +18,7 @@ Guides:
 * [filemove](/guides/filemove.md)
 * [fabfile](/guides/fabfile.md)
 * [proxy](/guides/proxy.md)
+* [win](/guides/win.md)
+* [ios](/guides/ios.md)
 
 ![overview](/pics/overview.png)
